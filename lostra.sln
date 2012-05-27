@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lostra", "lostra\lostra.csproj", "{8763B190-C7AE-4A20-8004-03838DB34384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lostraContent", "lostraContent\lostraContent.contentproj", "{D95DB36A-5544-46F8-9831-2602C9D26208}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Windows Phone = Debug|Windows Phone
+		Debug|x86 = Debug|x86
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Windows Phone = Release|Windows Phone
+		Release|x86 = Release|x86
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Debug|Windows Phone.Build.0 = Debug|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Debug|x86.ActiveCfg = Debug|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Debug|x86.Build.0 = Debug|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Debug|Xbox 360.Build.0 = Debug|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Release|Windows Phone.ActiveCfg = Release|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Release|Windows Phone.Build.0 = Release|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Release|x86.ActiveCfg = Release|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Release|x86.Build.0 = Release|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Release|Xbox 360.ActiveCfg = Release|x86
+		{8763B190-C7AE-4A20-8004-03838DB34384}.Release|Xbox 360.Build.0 = Release|x86
+		{D95DB36A-5544-46F8-9831-2602C9D26208}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D95DB36A-5544-46F8-9831-2602C9D26208}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{D95DB36A-5544-46F8-9831-2602C9D26208}.Debug|x86.ActiveCfg = Debug|x86
+		{D95DB36A-5544-46F8-9831-2602C9D26208}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{D95DB36A-5544-46F8-9831-2602C9D26208}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D95DB36A-5544-46F8-9831-2602C9D26208}.Release|Windows Phone.ActiveCfg = Release|x86
+		{D95DB36A-5544-46F8-9831-2602C9D26208}.Release|x86.ActiveCfg = Release|x86
+		{D95DB36A-5544-46F8-9831-2602C9D26208}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
