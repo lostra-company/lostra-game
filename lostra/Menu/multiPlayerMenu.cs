@@ -122,11 +122,11 @@ namespace lostra
                     #region lobbys labels
                     int sH =
                         Convert.ToInt32(
-                            global.resources.getFont("menu.fonts.levelList").MeasureString(global.resources.listLevels.ElementAt(i).Value.title).Y);
+                            global.resources.getFont("menu.fonts.levelList").MeasureString(global.resources.listLevels[global.multi.mData.dLobby.ElementAt(i).Value.map].title).Y);
 
                     int sW =
                         Convert.ToInt32(
-                            global.resources.getFont("menu.fonts.levelList").MeasureString(global.resources.listLevels.ElementAt(i).Value.title).
+                            global.resources.getFont("menu.fonts.levelList").MeasureString(global.resources.listLevels[global.multi.mData.dLobby.ElementAt(i).Value.map].title).
                                 Length());
 
                     int fH = global.resources.getTexture("blFh").Height;
@@ -401,11 +401,11 @@ namespace lostra
                     #region lobbys labels
                     int sH =
                         Convert.ToInt32(
-                            global.resources.getFont("menu.fonts.levelList").MeasureString(global.resources.listLevels.ElementAt(i).Value.title).Y);
+                            global.resources.getFont("menu.fonts.levelList").MeasureString(global.multi.mData.myLobby.playersList.ElementAt(i).Value).Y);
 
                     int sW =
                         Convert.ToInt32(
-                            global.resources.getFont("menu.fonts.levelList").MeasureString(global.resources.listLevels.ElementAt(i).Value.title).
+                            global.resources.getFont("menu.fonts.levelList").MeasureString(global.multi.mData.myLobby.playersList.ElementAt(i).Value).
                                 Length());
 
                     int fH = global.resources.getTexture("blFh").Height;

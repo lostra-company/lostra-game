@@ -225,13 +225,7 @@ namespace lostra
                 global.spriteBatch.DrawString(mF, "Атака: " + global.gameHandler.GameData.dataBuyUnit[unitChosed].atackPoint, new Vector2(mX, mY + 1), Color.White);
                 mY += 25;
 
-                global.spriteBatch.DrawString(mF, "Защита: " + global.gameHandler.GameData.dataBuyUnit[unitChosed].defPoint, new Vector2(mX, mY + 1), Color.White);
-                mY += 25;
-
-
-                global.spriteBatch.DrawString(mF, "Крит: " + global.gameHandler.GameData.dataBuyUnit[unitChosed].critChance + "%", new Vector2(mX, mY + 1), Color.White);
-                mY += 25; 
-
+        
 
                 // Create buttom
                 // Кнопка создания

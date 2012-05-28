@@ -46,6 +46,16 @@ namespace lostra
 
                     case "MYLOBPLAYERSUPDATE":
                         { global.multi.mData.myLobby.updateP(); break; }
+
+                    case "SYNSTART":
+                        { this.snxStart(); break; }
+
+                    case "SYNEND":
+                        { this.snxEnd(); break; }
+
+                    case "SNXMASK":
+                        { this.snxMask(returnData); break; }
+
                 }
 
             }
@@ -53,6 +63,53 @@ namespace lostra
         }
 
         //////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+        #region SYNSTART
+        public void snxStart()
+        {
+            global.multi.mData.dataBuyUnit = new Dictionary<int, buyUnit>();
+
+        }
+        #endregion
+
+        #region SYNEND
+        public void snxEnd()
+        {
+            global.gameHandler.GameData.dataBuyUnit = new Dictionary<int, buyUnit>();
+            global.gameHandler.GameData.dataBuyUnit = global.multi.mData.dataBuyUnit;
+
+
+
+
+
+            global.globalDebug0 = "END";
+        }
+        #endregion
+
+
+        #region snxMask
+        public void snxMask(string[] data)
+        {
+            int it = global.multi.mData.dataBuyUnit.Count();
+
+            global.multi.mData.dataBuyUnit.Add(it,new buyUnit(global,data[1],data[2]));
+            global.multi.mData.dataBuyUnit[it].mUIN = data[3];
+            global.multi.mData.dataBuyUnit[it].costGold = Convert.ToInt32(data[4]);
+            global.multi.mData.dataBuyUnit[it].hitPoint = Convert.ToInt32(data[5]);
+            global.multi.mData.dataBuyUnit[it].atackPoint = Convert.ToInt32(data[6]);
+            global.multi.mData.dataBuyUnit[it].maxGoWay = Convert.ToInt32(data[7]);
+            global.multi.mData.dataBuyUnit[it].atackRange = Convert.ToInt32(data[8]);
+
+
+            global.globalDebug0 = "MASK";
+
+        }
+        #endregion
+
+
+
 
         #region startGame
         public void startGame(string[] data)

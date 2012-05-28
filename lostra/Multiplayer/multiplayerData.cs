@@ -14,6 +14,8 @@ namespace lostra
         public myLobby myLobby;
 
 
+        public Dictionary<int, buyUnit> dataBuyUnit = new Dictionary<int, buyUnit>();
+
         public multiplayerData(Global global)
         {
             this.global = global;

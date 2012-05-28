@@ -63,7 +63,8 @@ namespace lostra
         public int windowWidth = 0;
 
 
-       
+        public string globalDebug0 = "";
+        public string globalDebug1 = "";
 
    
 

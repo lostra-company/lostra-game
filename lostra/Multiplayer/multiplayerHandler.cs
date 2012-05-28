@@ -116,7 +116,7 @@ namespace lostra
                 }
 
 
-                global.debug.WriteLine(readData);
+                //global.debug.WriteLine(readData);
             }
             
         }

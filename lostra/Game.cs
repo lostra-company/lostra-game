@@ -88,19 +88,25 @@ namespace lostra
 
 
             string aa = "DEBUG: " + global.debugString + " / " + Mouse.GetState().X + " / " + Mouse.GetState().Y + " - - ";
-            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 20), Color.Red);
+            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 15), Color.Red);
 
             aa = "HOVER celX: " + global.gameHandler.HoverCellIdX + "   /   HOVER celX: " + global.gameHandler.HoverCellIdY;
-            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 40), Color.Red);
+            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 30), Color.Red);
 
             aa = "HOVER celX: " + global.gameHandler.shiftMapX + "   /   HOVER celX: " + global.gameHandler.shiftMapY;
-            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 60), Color.Red);
+            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 45), Color.Red);
 
             aa = "HOVER celX: " + global.gameHandler.MapCalc.getRealYbyGecsCenter(global.gameHandler.HoverCellIdX, global.gameHandler.HoverCellIdY) + "   /   HOVER celX: " + global.gameHandler.shiftMapY;
-            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 80), Color.Red);
+            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 60), Color.Red);
 
             aa = "Turn: " + global.TurnCount.ToString();
-            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 100), Color.Red);
+            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 75), Color.Red);
+
+            aa = "Global0: " + global.globalDebug0;
+            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 90), Color.Red);
+
+            aa = "Global1: " + global.globalDebug1;
+            spriteBatch.DrawString(debugFont, aa, new Vector2(10, 105), Color.Red);
 
             spriteBatch.End();
 
